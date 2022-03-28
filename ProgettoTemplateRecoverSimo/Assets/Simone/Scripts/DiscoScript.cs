@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DiscoScript : Item
 {
+    public GameObject discorotto;
     private void Awake()
     {
         Damage = 1;
@@ -28,6 +29,16 @@ public class DiscoScript : Item
             //togliere vita al player
             collision.gameObject.GetComponent<PlayerScript>().SubisciDanno(Damage);
             Destroy(this.gameObject);
+        }
+    }
+
+    public void EsplodiDisco()
+    {
+        discorotto.SetActive(true);
+        for(int i=0; i < discorotto.transform.childCount; i++)
+        {
+            var pezzoRB=discorotto.transform.GetChild(i).GetComponent<Rigidbody>();
+            pezzoRB.AddExplosionForce(10, discorotto.transform.position, 3);
         }
     }
 }

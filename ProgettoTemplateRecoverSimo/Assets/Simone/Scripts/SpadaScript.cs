@@ -12,9 +12,10 @@ public class SpadaScript : MonoBehaviour
             var discoColpito = collision.gameObject;
             discoColpito.GetComponent<CapsuleCollider>().enabled = true;
             GameManager.Instance.dischiDistrutti += 1;
-            Destroy(discoColpito);
             //fare in modo che il disco si disfi prima di distruggerlo
+            discoColpito.GetComponent<DiscoScript>().EsplodiDisco();  //i pezzi non si dividono nell'esplosione
 
+            //Destroy(discoColpito);
         }
 
         if (collision.gameObject.tag == "Floor")
