@@ -8,6 +8,10 @@ public class DiscoScript : Item
     {
         Damage = 1;
     }
+    private void Start()
+    {
+        transform.LeanRotateAround(transform.up, 360, 0.4f).setLoopCount(50);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         //derivo la classe da item in modo da settare il damage, il player andrà a leggere questo valore per subire danni
@@ -23,6 +27,7 @@ public class DiscoScript : Item
         {
             //togliere vita al player
             collision.gameObject.GetComponent<PlayerScript>().SubisciDanno(Damage);
+            Destroy(this.gameObject);
         }
     }
 }

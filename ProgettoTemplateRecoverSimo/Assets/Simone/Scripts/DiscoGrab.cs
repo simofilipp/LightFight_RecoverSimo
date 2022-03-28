@@ -19,7 +19,7 @@ public class DiscoGrab : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
             //deve riprendere il fuoco nel caso io distrugga questo disco
-        if (collision.gameObject.tag == "RestartFuocoNemico" || collision.gameObject.tag == "Sword")
+        if (collision.gameObject.tag == "RestartFuocoNemico" || collision.gameObject.tag == "Sword" || collision.gameObject.tag == "Floor")
         {
             //fare scomparire temporaneamente la spada mentro lo ho in mano
 
