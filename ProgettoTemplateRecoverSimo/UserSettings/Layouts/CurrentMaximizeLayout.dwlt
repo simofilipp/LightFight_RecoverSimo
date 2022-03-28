@@ -98,7 +98,7 @@ MonoBehaviour:
       y: 21
       width: 679
       height: 294.4
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 1.1592739, y: 1.1592739}
     m_Translation: {x: 339.5, y: 147.2}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -106,10 +106,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -339.5
-      y: -147.2
-      width: 679
-      height: 294.4
+      x: -292.85574
+      y: -126.976036
+      width: 585.7115
+      height: 253.95207
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 848.75, y: 394.25}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 7672
+  controlID: 10894
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.711499, y: 6.787928, z: 15.428606}
+    m_Target: {x: 11.059936, y: -15.81032, z: 34.822018}
     speed: 2
-    m_Value: {x: -1.711499, y: 6.787928, z: 15.428606}
+    m_Value: {x: 11.059936, y: -15.81032, z: 34.822018}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -491,13 +491,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.23678996, y: -0.56386685, z: 0.17163058, w: -0.77277654}
+    m_Target: {x: 0.26766405, y: 0.067813985, z: -0.018095143, w: 0.9613451}
     speed: 2
-    m_Value: {x: -0.23671232, y: -0.563682, z: 0.17157431, w: -0.7725232}
+    m_Value: {x: 0.26756313, y: 0.067788415, z: -0.01808832, w: 0.9609826}
   m_Size:
-    m_Target: 1.3145589
+    m_Target: 20.096004
     speed: 2
-    m_Value: 1.3145589
+    m_Value: 20.096004
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -515,7 +515,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.0828724, y: 0.9001633, z: -0.1963935, w: 0.37984097}
+  m_LastSceneViewRotation: {x: 0.06939058, y: -0.60857576, z: -0.054827206, w: -0.78900915}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -579,10 +579,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 32}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2835feffec7afffff47afffffc7affff047bffff507bffff5887ffff368bffff9e090100d6090100160a0100240a0100560a0100
+      scrollPos: {x: 0, y: 127.600006}
+      m_SelectedIDs: 5681fcff
+      m_LastClickedID: -229034
+      m_ExpandedIDs: 16e7fcffaae7fcffe2e7fcff7a27fdff4847fdff2835feffec7afffff47afffffc7affff047bffff507bffff5887ffff368bffffd6090100160a0100560a0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -726,22 +726,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Simone/Prefabs
+    - Assets/Davide/Prefab_buoni
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Simone/Prefabs
+  - Assets/Davide/Prefab_buoni
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\utente18\Documents\GitHub\LightFight_RecoverSimo\ProgettoTemplateRecoverSimo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 300}
-    m_SelectedIDs: 20090100
-    m_LastClickedID: 67872
-    m_ExpandedIDs: 00000000460801004e080100500801006608010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d40b0100
+    m_LastClickedID: 68564
+    m_ExpandedIDs: 0000000046080100500801006608010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -794,8 +794,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 5681fcff
+    m_LastClickedInstanceID: -229034
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000bc6d0000145f00000a5f0000d87d0000000000004a7a000042bd0000e0650000
     m_RenameOverlay:
