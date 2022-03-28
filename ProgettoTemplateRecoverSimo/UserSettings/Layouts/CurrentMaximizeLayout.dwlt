@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 96
+  controlID: 7672
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.600006}
+      snapOffset: {x: -100, y: -25.600006}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -239,9 +239,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: -141, y: -199.79999}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -250,7 +250,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3602844, y: 8.718148, z: -1.1336385}
+    m_Target: {x: -1.711499, y: 6.787928, z: 15.428606}
     speed: 2
-    m_Value: {x: 1.3602844, y: 8.718148, z: -1.1336385}
+    m_Value: {x: -1.711499, y: 6.787928, z: 15.428606}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -491,9 +491,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.011605243, y: 0.9866942, z: -0.14693803, w: 0.07305879}
+    m_Target: {x: -0.23678996, y: -0.56386685, z: 0.17163058, w: -0.77277654}
     speed: 2
-    m_Value: {x: 0.011601598, y: 0.9863843, z: -0.14689186, w: 0.07303584}
+    m_Value: {x: -0.23671232, y: -0.563682, z: 0.17157431, w: -0.7725232}
   m_Size:
     m_Target: 1.3145589
     speed: 2
@@ -579,24 +579,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 47.600006}
-      m_SelectedIDs: 660a0100
-      m_LastClickedID: 68198
-      m_ExpandedIDs: ec7afffff47afffffc7affff047bffff507bffff5887ffff368bffffd6090100160a0100240a0100560a0100
+      scrollPos: {x: 0, y: 32}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2835feffec7afffff47afffffc7affff047bffff507bffff5887ffff368bffff9e090100d6090100160a0100240a0100560a0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: LightSaber-Hilt
-        m_OriginalName: LightSaber-Hilt
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 68152
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -726,21 +726,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Config/Default Input Actions
+    - Assets/Simone/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Config/Default Input Actions
+  - Assets/Simone/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\utente18\Documents\GitHub\LightFight_RecoverSimo\ProgettoTemplateRecoverSimo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 159}
-    m_SelectedIDs: c40b0100
-    m_LastClickedID: 68548
+    scrollPos: {x: 0, y: 300}
+    m_SelectedIDs: 20090100
+    m_LastClickedID: 67872
     m_ExpandedIDs: 00000000460801004e080100500801006608010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000046080100500801006608010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -794,24 +794,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 660a0100
-    m_LastClickedInstanceID: 68198
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000bc6d0000145f00000a5f0000d87d0000000000004a7a000042bd0000e065000028c20000
+    m_ExpandedInstanceIDs: c6230000bc6d0000145f00000a5f0000d87d0000000000004a7a000042bd0000e0650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlayerScript
-      m_OriginalName: PlayerScript
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 34120
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
