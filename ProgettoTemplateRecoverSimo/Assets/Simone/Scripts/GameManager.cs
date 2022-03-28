@@ -6,7 +6,9 @@ public enum FaseDiGioco
 {
     FaseDiDifesa,
     FaseAttacco,
-    FaseIniziale
+    FaseIniziale,
+    FaseMorte,
+    FaseVittoria
 }
 
 public class GameManager : Singleton<GameManager>

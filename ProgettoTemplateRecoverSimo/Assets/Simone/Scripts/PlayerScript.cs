@@ -22,6 +22,7 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log("Sono morto");
             //terminare il gioco perchè siamo morti, far comparire una ui per riprovare
+            GameManager.Instance.CambiaFaseGioco(FaseDiGioco.FaseMorte);
 
             //effetto vignetta per fare capire che si è stati colpiti
         }
