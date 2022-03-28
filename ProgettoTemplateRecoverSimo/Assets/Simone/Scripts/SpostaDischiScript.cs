@@ -12,7 +12,7 @@ public class SpostaDischiScript : MonoBehaviour
         {
             //indirizzo i dischi verso il player
             var disco = other.gameObject;
-            disco.transform.LookAt(player.transform);
+            disco.transform.LookAt(player.transform,disco.transform.up);
             disco.GetComponent<Rigidbody>().AddForce(disco.transform.forward * potenzaSpostamento, ForceMode.VelocityChange);
 
             //disco.GetComponent<Rigidbody>().MovePosition(player.transform.position);
