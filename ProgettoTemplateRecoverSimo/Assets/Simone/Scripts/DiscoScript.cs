@@ -5,13 +5,14 @@ using UnityEngine;
 public class DiscoScript : Item
 {
     public GameObject discorotto;
+    public GameObject discoIntero;
     private void Awake()
     {
         Damage = 1;
     }
     private void Start()
     {
-        transform.LeanRotateAround(transform.up, 360, 0.4f).setLoopCount(50);
+        discoIntero.LeanRotateAround(transform.up, 360, 0.4f).setLoopCount(50);
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -34,11 +35,8 @@ public class DiscoScript : Item
 
     public void EsplodiDisco()
     {
+        discoIntero.SetActive(false);
         discorotto.SetActive(true);
-        for(int i=0; i < discorotto.transform.childCount; i++)
-        {
-            var pezzoRB=discorotto.transform.GetChild(i).GetComponent<Rigidbody>();
-            pezzoRB.AddExplosionForce(10, discorotto.transform.position, 3);
-        }
+        Destroy(this.gameObject, 1f);
     }
 }
