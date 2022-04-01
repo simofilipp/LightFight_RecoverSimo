@@ -33,10 +33,14 @@ public class DiscoScript : Item
         }
     }
 
-    public void EsplodiDisco()
+    public void EsplodiDisco(Vector3 puntoEsplosione)
     {
         discoIntero.SetActive(false);
         discorotto.SetActive(true);
+        for(int i = 0; i < discorotto.transform.childCount; i++)
+        {
+            discorotto.transform.GetChild(0).GetComponent<Rigidbody>().AddExplosionForce(8, puntoEsplosione,10,0,ForceMode.Impulse);
+        }
         Destroy(this.gameObject, 1f);
     }
 }
