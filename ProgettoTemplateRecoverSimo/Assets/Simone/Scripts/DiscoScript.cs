@@ -35,6 +35,7 @@ public class DiscoScript : Item
 
     public void EsplodiDisco(Vector3 puntoEsplosione)
     {
+        GetComponent<CapsuleCollider>().enabled = false;
         gameObject.tag = "Rotto";
         discoIntero.SetActive(false);
         discorotto.SetActive(true);

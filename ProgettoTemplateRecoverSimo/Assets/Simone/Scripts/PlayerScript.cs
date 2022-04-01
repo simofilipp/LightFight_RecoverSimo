@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
     int health;
     private void Awake()
     {
-        health = 3;
+        health = 5;
     }
     // Start is called before the first frame update
     void Start()
