@@ -207,9 +207,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Restart",
+                    "name": "OpenCanvas",
                     "type": "Button",
-                    "id": "aefa900e-7c14-4bf0-99a3-8f7a868309d2",
+                    "id": "c7ef202f-e758-4668-8039-46435aaa6570",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -582,12 +582,12 @@
                 },
                 {
                     "name": "",
-                    "id": "0976a189-2e6c-4f95-b6fd-ce56101fb0ac",
+                    "id": "836acf63-46f1-4314-85b3-6534d4e7f7a2",
                     "path": "<XRController>{LeftHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Restart",
+                    "groups": "",
+                    "action": "OpenCanvas",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -751,9 +751,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "PlayAudio",
+                    "name": "OpenCanvas",
                     "type": "Button",
-                    "id": "2339ee5d-5c38-4432-b12b-514c618981f2",
+                    "id": "f9af2019-9366-4ee0-91e8-b908c64f35ad",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1115,12 +1115,12 @@
                 },
                 {
                     "name": "",
-                    "id": "4d028787-4107-4fb1-b588-dc2c77384e38",
+                    "id": "c764d3d6-7440-4201-acad-6be1754074ea",
                     "path": "<XRController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "PlayAudio",
+                    "groups": "",
+                    "action": "OpenCanvas",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

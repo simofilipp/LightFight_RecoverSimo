@@ -20,11 +20,14 @@ public class GameManager : Singleton<GameManager>
     public bool disarmato;
     public FaseDiGioco faseCorrente;
 
+    public GameObject canvas;
+
 
     [SerializeField] EnemyScript enemy;
     // Start is called before the first frame update
     void Start()
     {
+        disarmato = true;
         faseCorrente = FaseDiGioco.FaseIniziale;    
     }
 
@@ -37,6 +40,12 @@ public class GameManager : Singleton<GameManager>
             Debug.Log("Disco Grabbable");
             //istanziare disco grabbabile
             lanciaDiscoGrab = true;
+        }
+
+        if (faseCorrente == FaseDiGioco.FaseMorte)
+        {
+            //Alzo il canvas quando muoio
+            canvas.GetComponent<CanvasScript>().MostraCanva();
         }
     }
 

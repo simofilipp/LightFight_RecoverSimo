@@ -17,6 +17,7 @@ TagManager:
   - Sword
   - Floor
   - Enemy
+  - Rotto
   layers:
   - Default
   - TransparentFX

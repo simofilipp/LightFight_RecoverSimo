@@ -17,19 +17,19 @@ public class HandInputHandler : MonoBehaviour
     
     protected XRBaseController controller;
     [SerializeField]
-    protected InputActionReference AudioAction;
+    protected InputActionReference CanvasAction;
     [SerializeField]
     protected AudioClip suono;
 
     [SerializeField]
-    GameObject audiomanager;
+    GameObject canva;
 
 
 
     void Awake()
     {
         controller = GetComponent<XRBaseController>();
-        AudioAction.action.performed += PlayAudio;
+        CanvasAction.action.performed += PlayCanvas;
     }
 
     private void Restart(InputAction.CallbackContext obj)
@@ -47,9 +47,25 @@ public class HandInputHandler : MonoBehaviour
     {
         controller.SendHapticImpulse(amplitude, duration);
     }
-    private void PlayAudio(InputAction.CallbackContext obj)
+    private void PlayCanvas(InputAction.CallbackContext obj)
     {
-        audiomanager.GetComponent<AudioSource>().clip = suono;
-        audiomanager.GetComponent<AudioSource>().Play();
+        if(GameManager.Instance.disarmato && !canva.GetComponent<CanvasScript>().visibile)
+        {
+            canva.GetComponent<CanvasScript>().MostraCanva();
+        }
+        else if(GameManager.Instance.disarmato && canva.GetComponent<CanvasScript>().visibile)
+        {
+            canva.GetComponent<CanvasScript>().SpegniCanva();
+        }
+        else
+        {
+            Debug.Log("Niente");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CanvasAction.action.performed -= PlayCanvas;
+
     }
 }

@@ -49,6 +49,11 @@ public class SpadaScript : MonoBehaviour
         //viene chiamato quando prendo in mano la spada e sono pronto a difendermi
         GetComponent<Rigidbody>().useGravity = true;
         GameManager.Instance.disarmato = false;
+
+        //abbasso il canva se prendo la spada e questo si trova in scena
+        if(GameManager.Instance.canvas.GetComponent<CanvasScript>().visibile)
+            GameManager.Instance.canvas.GetComponent<CanvasScript>().SpegniCanva();
+
         GameManager.Instance.RiprendiFuocoNemico();
     }
 }

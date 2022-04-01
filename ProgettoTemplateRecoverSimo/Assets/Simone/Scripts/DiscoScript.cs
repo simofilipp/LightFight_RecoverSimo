@@ -35,6 +35,7 @@ public class DiscoScript : Item
 
     public void EsplodiDisco(Vector3 puntoEsplosione)
     {
+        gameObject.tag = "Rotto";
         discoIntero.SetActive(false);
         discorotto.SetActive(true);
         for(int i = 0; i < discorotto.transform.childCount; i++)
