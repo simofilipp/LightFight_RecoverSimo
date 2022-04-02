@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerScript : MonoBehaviour
 {
+    [SerializeField] Volume volume;
+    Vignette vignette;
     int health;
     private void Awake()
     {
@@ -12,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,5 +36,7 @@ public class PlayerScript : MonoBehaviour
     public void SubisciDanno(int damage)
     {
         health -= damage;
+        if (volume.profile.TryGet(out vignette))
+            vignette.intensity.value += 0.15f;
     }
 }

@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/AssetsScenaDiEsempio/WorldInteractionDemo.unity
-    guid: 3d16fc5db26e2354e9ac2a5031a52e6d
   - enabled: 1
     path: Assets/Simone/Scenes/Template.unity
     guid: d30b8821a062a473da8de7119e1b29fb
