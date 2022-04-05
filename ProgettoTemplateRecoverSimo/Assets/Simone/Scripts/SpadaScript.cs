@@ -5,6 +5,14 @@ using UnityEngine;
 public class SpadaScript : MonoBehaviour
 {
     [SerializeField] Transform slotSpada;
+
+    Rigidbody swordRB;
+    private void Start()
+    {
+        swordRB = GetComponent<Rigidbody>();
+        swordRB.maxAngularVelocity = 20;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "DiscoNemico")

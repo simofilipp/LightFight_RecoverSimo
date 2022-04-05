@@ -27,17 +27,16 @@ public class CanvasScript : MonoBehaviour
     public void MostraCanva()
     {
         visibile = true;
-        //transform.localScale = Vector3.zero;
-        //transform.LeanScale(Vector3.zero, 0.1f);
-        transform.LeanMoveY(2, 1.7f).setEaseOutQuart();
-        transform.LeanScale(initialScale, 1.7f).setEaseOutQuart();
+
+        //transform.LeanMoveY(2, 1.4f).setEaseOutQuart();
+        transform.LeanScale(initialScale, 0.5f).setEaseOutQuart().setEaseOutBack();
     }
 
     public void SpegniCanva()
     {
         visibile = false;
-        transform.LeanMoveY(initialPositionY, 1.7f).setEaseOutQuart();
-        transform.LeanScale(Vector3.zero, 1.7f).setEaseOutQuart();
+        //transform.LeanMoveY(initialPositionY, 1.4f).setEaseOutQuart();
+        transform.LeanScale(Vector3.zero, 0.5f).setEaseOutQuart().setEaseInBack();
     }
 
     public void Restart()
