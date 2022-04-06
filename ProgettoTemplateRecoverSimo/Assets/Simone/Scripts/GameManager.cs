@@ -42,7 +42,7 @@ public class GameManager : Singleton<GameManager>
             lanciaDiscoGrab = true;
         }
 
-        if (faseCorrente == FaseDiGioco.FaseMorte)
+        if (faseCorrente == FaseDiGioco.FaseMorte || faseCorrente == FaseDiGioco.FaseVittoria)
         {
             //Alzo il canvas quando muoio
             canvas.GetComponent<CanvasScript>().MostraCanva();
@@ -56,9 +56,12 @@ public class GameManager : Singleton<GameManager>
 
     public void RiprendiFuocoNemico()
     {
-        //Riprende a sparare il nemico 
-        faseCorrente = FaseDiGioco.FaseDiDifesa;
-        enemy.RiprendiFuoco();
+        //Riprende a sparare il nemico se non abbiamo perso/vinto
+        if (faseCorrente != FaseDiGioco.FaseMorte || faseCorrente != FaseDiGioco.FaseVittoria)
+        {
+            CambiaFaseGioco(FaseDiGioco.FaseDiDifesa);
+            enemy.RiprendiFuoco();
+        }
     }
 }
 

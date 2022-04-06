@@ -37,6 +37,6 @@ public class PlayerScript : MonoBehaviour
     {
         health -= damage;
         if (volume.profile.TryGet(out vignette))
-            vignette.intensity.value += 0.15f;
+            vignette.intensity.value += 0.2f;
     }
 }

@@ -10,7 +10,8 @@ public class SpadaScript : MonoBehaviour
     private void Start()
     {
         swordRB = GetComponent<Rigidbody>();
-        swordRB.maxAngularVelocity = 20;
+        swordRB.maxAngularVelocity = 50;
+        swordRB.maxDepenetrationVelocity = 30;
     }
 
     private void OnCollisionEnter(Collision collision)

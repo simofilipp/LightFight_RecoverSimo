@@ -25,6 +25,11 @@ public class EnemyScript : MonoBehaviour
         //nemico rivolto verso il player
         transform.LookAt(player.transform.position);
 
+        //se senza cannoni, si vince
+        if (cannoni.Count == 0)
+        {
+            GameManager.Instance.CambiaFaseGioco(FaseDiGioco.FaseVittoria);
+        }
     }
 
     IEnumerator FuocoNemico()
@@ -70,9 +75,12 @@ public class EnemyScript : MonoBehaviour
 
     public void DistruggiCannone()
     {
-        //rimuovo il primo cannone dalla lista e lo distruggo in scena
+        //rimuovo cannone dalla lista e lo distruggo in scena
         if (cannoni.Count > 0)
         {
+            //Effetto esplosione e distruzione cannone
+
+
             var cannoneDistrutto = cannoni[Random.Range(0, cannoni.Count)];
             cannoni.Remove(cannoneDistrutto);
             Destroy(cannoneDistrutto);
