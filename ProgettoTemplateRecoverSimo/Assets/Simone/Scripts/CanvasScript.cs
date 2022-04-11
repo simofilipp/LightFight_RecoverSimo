@@ -36,7 +36,7 @@ public class CanvasScript : MonoBehaviour
             }
             else if (GameManager.Instance.faseCorrente == FaseDiGioco.FaseVittoria)
             {
-                testoPanel.text = "YOU WIN IN\n" + FormatTime(timer * 1000)+"MINUTES";
+                testoPanel.text = "YOU WIN IN\n" + FormatTime(timer * 1000)+"\nMINUTES";
             }
             else 
             {
