@@ -7,15 +7,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material.003
-  m_Shader: {fileID: -6465566751694194690, guid: 6bd33a7de4888584db694d0e860b1802,
-    type: 3}
-  m_ShaderKeywords: 
+  m_Name: fluo
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -42,10 +42,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _HologramTexture:
-        m_Texture: {fileID: 2800000, guid: 783cb95632c95e643b56965be22642ec, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -100,10 +96,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ScrollSpeed: -104.6
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -113,15 +107,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.41852212, g: 0.7007035, b: 0.9063317, a: 1}
-    - _Color: {r: 0.41852206, g: 0.7007035, b: 0.9063317, a: 1}
-    - _EmissionColor: {r: 0.30966023, g: 0.5641493, b: 0.7529225, a: 1}
-    - _Fresnel_Color: {r: 0.28235295, g: 0.87058824, b: 1.137255, a: 0.078431375}
-    - _HologramTiling: {r: 35.23, g: 18.75, b: 0, a: 0}
-    - _MainColor: {r: 0.30578914, g: 0.91736746, b: 1.216786, a: 0.8156863}
+    - _BaseColor: {r: 0.019607833, g: 0.28606087, b: 0.90588236, a: 1}
+    - _Color: {r: 0.019607833, g: 0.2860608, b: 0.90588236, a: 1}
+    - _EmissionColor: {r: 0.28700754, g: 0.28700754, b: 54.81844, a: 68.59999}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3368193408033997055
+--- !u!114 &7283926645225159690
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -928,11 +928,11 @@
                 },
                 {
                     "name": "",
-                    "id": "92bb5b8f-bf48-4dab-af05-50a865773895",
-                    "path": "<XRController>{RightHand}/primaryButton",
+                    "id": "9932247d-e08b-4bc6-9ff6-d6678509e379",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "",
                     "action": "UI Press",
                     "isComposite": false,
                     "isPartOfComposite": false
