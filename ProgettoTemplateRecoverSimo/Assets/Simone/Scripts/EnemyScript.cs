@@ -81,6 +81,7 @@ public class EnemyScript : MonoBehaviour
             var cannoneDistrutto = cannoni[Random.Range(0, cannoni.Count)];
             var solve = cannoneDistrutto.GetComponent<MeshRenderer>().material;
             cannoni.Remove(cannoneDistrutto);
+            cannoneDistrutto.transform.GetChild(1).gameObject.SetActive(true);
             LeanTween.value(-1f, 1f, 3f).setOnUpdate((float value) =>
               {
                   solve.SetFloat("_Dissolvenza_animazione", value);
