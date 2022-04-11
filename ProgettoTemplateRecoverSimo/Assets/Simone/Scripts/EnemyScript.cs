@@ -16,7 +16,6 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -79,11 +78,16 @@ public class EnemyScript : MonoBehaviour
         if (cannoni.Count > 0)
         {
             //Effetto esplosione e distruzione cannone
-
-
             var cannoneDistrutto = cannoni[Random.Range(0, cannoni.Count)];
+            var solve = cannoneDistrutto.GetComponent<MeshRenderer>().material;
             cannoni.Remove(cannoneDistrutto);
-            Destroy(cannoneDistrutto);
+            LeanTween.value(-1f, 1f, 3f).setOnUpdate((float value) =>
+              {
+                  solve.SetFloat("_Dissolvenza_animazione", value);
+              }).setOnComplete(() =>
+              {
+                  Destroy(cannoneDistrutto);
+              });
         }
     }
 }
