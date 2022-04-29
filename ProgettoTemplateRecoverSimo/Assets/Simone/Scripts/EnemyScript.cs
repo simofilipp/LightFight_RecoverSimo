@@ -95,7 +95,8 @@ public class EnemyScript : MonoBehaviour
                   Destroy(cannoneDistrutto);
               });
             //aumento rateo di fuoco nemico
-            rateoDiFuoco += 0.1f;
+            rateoDiFuoco -= 0.15f;
+            forzaEsplosione += 1.2f;
         }
     }
 }
